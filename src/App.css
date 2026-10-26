@@ -1,0 +1,177 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f7f3;
+  color: #173b2b;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.panel,
+.dashboard {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.login {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 48px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+p {
+  color: #607568;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+input {
+  padding: 13px;
+  border: 1px solid #cbd9ce;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #21834e;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #176b3e;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 950px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.logout {
+  background: #e9f0eb;
+  color: #173b2b;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  color: #21834e;
+  font-weight: bold;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.sensor-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f4faf5;
+  padding: 22px;
+  border-radius: 14px;
+}
+
+.sensor-card span {
+  color: #607568;
+}
+
+.sensor-card strong {
+  font-size: 28px;
+}
+
+.prediction {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 14px;
+  background: #eaf5ed;
+}
+
+.error {
+  color: #c62828;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 12px;
+  }
+
+  .panel,
+  .dashboard {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .sensor-card strong {
+    font-size: 24px;
+  }
+
+  header {
+    align-items: flex-start;
+  }
+}
+h1, h2 {
+  color: #173b2b;
+}
+.history-chart {
+  margin-top: 24px;
+  padding: 24px;
+  background: #e8f4eb;
+  border-radius: 16px;
+}
+
+.history-chart h2 {
+  color: #173b2b;
+  margin-bottom: 8px;
+}
+
+.history-chart p {
+  color: #526b5a;
+  margin-bottom: 20px;
+}
