@@ -1,0 +1,22 @@
+{
+    "project": "FruitGuard",
+    "algorithm": "Random Forest Classifier",
+    "accuracy": 0.7937,
+    "features": [
+        "fruit_type",
+        "MQ4",
+        "MQ135"
+    ],
+    "target": "quality_label",
+    "classes": [
+        "Banana_Ripe",
+        "Banana_Rotten",
+        "Banana_Unripe",
+        "Mango_Ripe",
+        "Mango_Rotten",
+        "Mango_Unripe",
+        "Tomato_Fresh",
+        "Tomato_Intermediate fresh",
+        "Tomato_Rotten"
+    ]
+}

@@ -35,3 +35,9 @@ dist-ssr
 
 # Firebase local cache
 .firebase/
+
+# Python backend
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
